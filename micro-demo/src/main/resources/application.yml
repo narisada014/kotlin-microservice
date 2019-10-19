@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: "development"
+
+service:
+  message:
+    type: "simple"
+    text: "hello"
+
+# この点線で環境ごとに分けることができる
+---
+spring:
+  profiles: "development"
+service:
+  message:
+    text: "hi"
+
+---
+spring:
+  profiles: "production"
+service:
+  message:
+    type: "advance"
+    text: "welcome"
