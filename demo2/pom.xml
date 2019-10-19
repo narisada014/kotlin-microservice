@@ -8,8 +8,8 @@
 		<version>2.1.9.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.microservice.microdemo2</groupId>
-	<artifactId>demo2</artifactId>
+	<groupId>com.microservice</groupId>
+	<artifactId>microdemo2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo2</name>
 	<description>Demo project for Spring Boot</description>
@@ -51,6 +51,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<executable>true</executable>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.jetbrains.kotlin</groupId>
