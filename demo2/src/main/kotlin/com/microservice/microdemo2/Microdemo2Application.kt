@@ -21,6 +21,7 @@ class Microdemo2Application {
 	// initialCustomerのオブジェクトをCustomerオブジェクトのidで結びつける。
 	// ConcurrentHashMap<Int, String>()を行うと{}が生成される。()内の引数はarrayOfで定義されたオブジェクト
 	// Customerのidとハッシュ配列のインデックスIdが紐づけられる => {1=Customer(id=1, name=kotlin)} こんな感じ
+	// かつ {1=Customer(id=1, name=gggg)}の形式のデータのみをとるという意味
 	fun customers() = ConcurrentHashMap<Int, Customer>(initialCustomers.associateBy(Customer::id))
 }
 
